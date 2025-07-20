@@ -3,8 +3,8 @@ backend:
   repo: Slashmore87/bmasv-portfolio
   branch: main
 
-media_folder: "images/uploads" # Carpeta donde se guardan imágenes
-public_folder: "/images/uploads"
+media_folder: "_include/img"          # Carpeta base para subir imágenes
+public_folder: "/_include/img"        # Carpeta pública para acceder desde la web
 
 collections:
   - name: "proyectos"
@@ -16,7 +16,16 @@ collections:
       - { label: "Título", name: "title", widget: "string" }
       - { label: "Año", name: "year", widget: "number" }
       - { label: "Descripción", name: "description", widget: "text" }
-      - { label: "Imágenes", name: "images", widget: "list", field: {label: "Imagen", name: "image", widget: "image"} }
+      - label: "Imagen Full"
+        name: "imagen_full"
+        widget: "image"
+        media_folder: "_include/img/work/full"
+        public_folder: "/_include/img/work/full"
+      - label: "Thumbnail"
+        name: "thumbnail"
+        widget: "image"
+        media_folder: "_include/img/work/thumbs"
+        public_folder: "/_include/img/work/thumbs"
   - name: "publicaciones"
     label: "Publicaciones"
     folder: "publicaciones"
@@ -26,4 +35,13 @@ collections:
       - { label: "Título", name: "title", widget: "string" }
       - { label: "Año", name: "year", widget: "number" }
       - { label: "Descripción", name: "description", widget: "text" }
-      - { label: "Archivo o Imagen", name: "file", widget: "file" }
+      - label: "Imagen Full"
+        name: "imagen_full"
+        widget: "image"
+        media_folder: "_include/img/prensa/full"
+        public_folder: "/_include/img/prensa/full"
+      - label: "Thumbnail"
+        name: "thumbnail"
+        widget: "image"
+        media_folder: "_include/img/prensa/thumbs"
+        public_folder: "/_include/img/prensa/thumbs"
