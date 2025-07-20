@@ -4,11 +4,18 @@
     <meta charset="utf-8" />
     <title>Panel de Administración</title>
 
-    <!--  Usa la versión estable de Netlify CMS (2.x)  -->
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <script src="https://unpkg.com/netlify-cms@2.10.197/dist/netlify-cms.js"></script>
   </head>
   <body>
-    <!-- Elemento donde el CMS monta su interfaz -->
     <div id="nc-root"></div>
+
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+          if (!user) window.netlifyIdentity.open("login");
+        });
+      }
+    </script>
   </body>
 </html>
