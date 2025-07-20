@@ -1,6 +1,5 @@
 backend:
   name: git-gateway
-  repo: Slashmore87/bmasv-portfolio   #  <-- tu usuario / repo
   branch: main
 
 media_folder: "_include/img"          # subidas reales
