@@ -1,0 +1,28 @@
+backend:
+  name: git-gateway
+  branch: main  # o master, según tu repo
+
+media_folder: "images/uploads" # Carpeta donde se guardan imágenes
+public_folder: "/images/uploads"
+
+collections:
+  - name: "proyectos"
+    label: "Proyectos"
+    folder: "proyectos"
+    create: true
+    slug: "{{year}}-{{slug}}"
+    fields:
+      - { label: "Título", name: "title", widget: "string" }
+      - { label: "Año", name: "year", widget: "number" }
+      - { label: "Descripción", name: "description", widget: "text" }
+      - { label: "Imágenes", name: "images", widget: "list", field: {label: "Imagen", name: "image", widget: "image"} }
+  - name: "publicaciones"
+    label: "Publicaciones"
+    folder: "publicaciones"
+    create: true
+    slug: "{{year}}-{{slug}}"
+    fields:
+      - { label: "Título", name: "title", widget: "string" }
+      - { label: "Año", name: "year", widget: "number" }
+      - { label: "Descripción", name: "description", widget: "text" }
+      - { label: "Archivo o Imagen", name: "file", widget: "file" }
