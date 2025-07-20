@@ -1,0 +1,6 @@
+# Permite las rutas internas de Netlify Identity / Git Gateway
+/.netlify/identity/*     /admin/index.html   200
+/.netlify/git/*          /admin/index.html   200
+
+# Tu catch-all habitual para SPA / sitio estático
+/*                       /index.html         200
