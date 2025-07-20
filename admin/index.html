@@ -11,7 +11,9 @@
     </script>
     <script>
       window.addEventListener("DOMContentLoaded", function() {
-        window.CMS.init();
+        if (window.CMS) {
+          window.CMS.init();
+        }
       });
     </script>
   </body>
