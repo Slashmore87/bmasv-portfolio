@@ -1,10 +1,10 @@
 backend:
   name: github
-  repo: Slashmore87/bmasv-portfolio
+  repo: Slashmore87/bmasv-portfolio   #  <-- tu usuario / repo
   branch: main
 
-media_folder: "_include/img"          # Carpeta base para subir imágenes
-public_folder: "/_include/img"        # Carpeta pública para acceder desde la web
+media_folder: "_include/img"          # subidas reales
+public_folder: "/_include/img"        # ruta pública
 
 collections:
   - name: "proyectos"
@@ -13,10 +13,10 @@ collections:
     create: true
     slug: "{{year}}-{{slug}}"
     fields:
-      - { label: "Título", name: "title", widget: "string" }
-      - { label: "Año", name: "year", widget: "number" }
+      - { label: "Título",   name: "title",  widget: "string" }
+      - { label: "Año",      name: "year",   widget: "number" }
       - { label: "Descripción", name: "description", widget: "text" }
-      - label: "Imagen Full"
+      - label: "Imagen full"
         name: "imagen_full"
         widget: "image"
         media_folder: "_include/img/work/full"
@@ -26,6 +26,7 @@ collections:
         widget: "image"
         media_folder: "_include/img/work/thumbs"
         public_folder: "/_include/img/work/thumbs"
+
   - name: "publicaciones"
     label: "Publicaciones"
     folder: "publicaciones"
@@ -33,9 +34,9 @@ collections:
     slug: "{{year}}-{{slug}}"
     fields:
       - { label: "Título", name: "title", widget: "string" }
-      - { label: "Año", name: "year", widget: "number" }
+      - { label: "Año",    name: "year",  widget: "number" }
       - { label: "Descripción", name: "description", widget: "text" }
-      - label: "Imagen Full"
+      - label: "Imagen full"
         name: "imagen_full"
         widget: "image"
         media_folder: "_include/img/prensa/full"
