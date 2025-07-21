@@ -15,11 +15,12 @@ collections:
       - {label: "Título", name: "title", widget: "string"}
       - {label: "Año", name: "year", widget: "number"}
       - {label: "Descripción", name: "description", widget: "text"}
-      - label: "Imagen full"
+      - label: "Imágenes full"
         name: "imagen_full"
-        widget: "image"
-        media_folder: "/_include/img/work/full"
-        public_folder: "/_include/img/work/full"
+        widget: "list"
+        field:
+          {label: "Imagen", name: "image", widget: "image", media_folder: "/_include/img/work/full", public_folder: "/_include/img/work/full"}
+
       - label: "Thumbnail"
         name: "thumbnail"
         widget: "image"
