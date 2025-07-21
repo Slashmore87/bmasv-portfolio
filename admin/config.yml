@@ -29,6 +29,14 @@ collections:
         widget: "image"
         media_folder: "/_include/img/work/thumbs"
         public_folder: "/_include/img/work/thumbs"
+      - label: "Filtro"
+        name: "filtro"
+        widget: "select"
+        options:
+          - { label: "Concurso", value: "con" }
+          - { label: "Asesoría", value: "ase" }
+          - { label: "Arquitectura", value: "arq" }
+          - { label: "Licitaciones", value: "lic" }
   - name: "publicaciones"
     label: "Publicaciones"
     folder: "publicaciones"
