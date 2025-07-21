@@ -19,8 +19,11 @@ collections:
         name: "imagen_full"
         widget: "list"
         field:
-          {label: "Imagen", name: "image", widget: "image", media_folder: "/_include/img/work/full", public_folder: "/_include/img/work/full"}
-
+          label: "Imagen"
+          name: "image"
+          widget: "image"
+          media_folder: "/_include/img/work/full"
+          public_folder: "/_include/img/work/full"
       - label: "Thumbnail"
         name: "thumbnail"
         widget: "image"
