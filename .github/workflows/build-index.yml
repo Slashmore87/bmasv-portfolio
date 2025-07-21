@@ -1,0 +1,34 @@
+name: Actualiza Index.html Automáticamente
+
+on:
+  push:
+    paths:
+      - 'proyectos/**'
+      - 'actualiza_proyectos.py'
+      - '.github/workflows/build-index.yml'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Configura Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.x
+
+      - name: Instala dependencias
+        run: pip install pyyaml
+
+      - name: Ejecuta script Python para actualizar index.html
+        run: python actualiza_proyectos.py
+
+      - name: Haz commit y push si el index.html cambió
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add index.html
+          git diff --cached --quiet || git commit -m "Actualiza index.html automáticamente [GitHub Actions]"
+          git push
