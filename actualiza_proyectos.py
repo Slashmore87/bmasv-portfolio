@@ -41,7 +41,7 @@ def generar_html(proyecto, index):
     for img in imagenes[1:]:
         bloque += f'                  <a class="hover-wrap fancybox" data-fancybox-group="{gallery_id}" title="{title}" href="{img}"></a>\n'
 
-    bloque += f'                  <!-- Thumb Image and Description --> <img src="{thumbnail}">\n                </li>\n'
+    bloque += f'                  <!-- Thumb Image and Description --> <img src="{thumbnail}" alt="{description}">\n                </li>\n'
     return bloque
 
 def reemplazar_seccion(html, inicio, fin, nuevo_bloque):
