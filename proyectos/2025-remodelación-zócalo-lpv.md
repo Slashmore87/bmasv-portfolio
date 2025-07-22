@@ -6,10 +6,10 @@ description: "Propuesta para la remodelación del emblemático edificio 'La
   el zócalo comercial actual mediante homologación de tipografías y materiales.
   "
 imagen_full:
-  - /_include/img/work/full/lpv3.jpg
-  - /_include/img/work/full/lpv0.jpg
   - /_include/img/work/full/lpv1.jpg
+  - /_include/img/work/full/lpv3.jpg
   - /_include/img/work/full/lpv2.jpg
+  - /_include/img/work/full/lpv0.jpg
 thumbnail: /_include/img/work/thumbs/lpv.jpg
 filtro: arq
 ---
