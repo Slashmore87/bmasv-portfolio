@@ -16,7 +16,7 @@ def cargar_proyectos():
                     continue
                 data = yaml.safe_load(frontmatter.group(1))
                 proyectos.append(data)
-    return sorted(proyectos, key=lambda x: (-int(str(x.get("year", 0))[:4]), x.get("title", "")))
+    return proyectos
 
 def generar_html(proyecto, index):
     title = proyecto.get("title", "")
