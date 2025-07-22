@@ -1,5 +1,5 @@
 ---
-title: REMODELACIÓN ZÓCALO LPV
+title: Remodelación Zócalo LPV
 year: 2025
 description: "Propuesta para la remodelación del emblemático edificio 'La
   Portada de Vitacura' de Mauricio Despouy. La propuesta consiste en uniformar
