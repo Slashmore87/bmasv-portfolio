@@ -19,7 +19,7 @@ def cargar_proyectos():
                 proyectos.append(data)
     # Ordena por campo "orden" (menor a mayor), luego por año descendente, luego por título
     return sorted(proyectos, key=lambda x: (
-        int(x.get("orden", 9999)),
+        -int(x.get("orden", 9999)),
         -int(str(x.get("year", 0))[:4]),
         x.get("title", ""),
         x["_archivo"]
