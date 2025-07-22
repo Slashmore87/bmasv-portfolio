@@ -1,5 +1,5 @@
 ---
-title: ANFITEATRO PUCHUNCAVÍ
+title: Anfiteatro Puchuncaví
 year: 2025
 description: "Propuesta de anfiteatro para el centro cultural de Puchuncaví.
   Actualmente el patrio trasero del recinto está en desuso por lo que se propone
