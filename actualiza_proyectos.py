@@ -15,8 +15,15 @@ def cargar_proyectos():
                 if not frontmatter:
                     continue
                 data = yaml.safe_load(frontmatter.group(1))
+                data["_archivo"] = archivo  # opcional: por si quieres ordenar por archivo si todo es igual
                 proyectos.append(data)
-    return proyectos
+    # Ordena por campo "orden" (menor a mayor), luego por año descendente, luego por título
+    return sorted(proyectos, key=lambda x: (
+        int(x.get("orden", 9999)),
+        -int(str(x.get("year", 0))[:4]),
+        x.get("title", ""),
+        x["_archivo"]
+    ))
 
 def generar_html(proyecto, index):
     title = proyecto.get("title", "")
