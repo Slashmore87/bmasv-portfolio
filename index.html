@@ -1545,6 +1545,192 @@
     </div>
   </div>
   <!-- End Proyectos Section -->
+
+  <!-- NUEVOOOOOOOOOO -->
+
+<!-- CEVKIT Section -->
+<div id="cevkit" class="page">
+  <div class="container">
+    <!-- Title Page -->
+    <div class="row">
+      <div class="span12">
+        <div class="title-page">
+          <h2 class="title">CEVkit</h2>
+          <h3 class="title-description">
+            Herramientas para la Certificación Energética de Viviendas (CEV), Chile.
+          </h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== CEVkit (insertar después de "Publicaciones") ===== -->
+<section id="cevkit-section" class="section cevkit">
+  <div class="container">
+    <header class="cevkit__head">
+      <p>
+        CEVkit es un set de herramientas gratuitas creadas por B+V Arquitectos para Rhino y Grasshopper.
+        Su fin es acelerar la pre-certificación energética de viviendas en Chile (CEV). Pensado para oficinas,
+        SERVIU y equipos municipales que requieren decisiones tempranas con trazabilidad. No es una herramienta
+        oficial y está constantemente en desarrollo. Utilizar bajo responsabilidad propia. Sugerencias a
+        contacto@bmasv.cl
+      </p>
+	  <div>
+	  </div>
+      <div class="cevkit__actions">
+        <a class="btn btn--primary" href="_include/descargas/CEVkit09.zip" download>
+          Descargar CEVkit WIP (v0.9 alpha)
+        </a>
+        <a class="btn btn--ghost" href="_include//descargas/CEVkit.pdf" target="_blank" rel="noopener">
+          Guía de instalación (PDF)
+        </a>
+        <a class="btn btn--ghost" href="_include//descargas/CEVkit.3dm" download>
+          Modelo de ejemplo (.3dm)
+        </a>
+      </div>
+    </header>
+
+    <div class="cevkit__grid">
+      <!-- GIF 1 -->
+      <figure class="cevkit__item">
+        <div class="cevkit__thumb">
+          <img
+            src="_include/img/cevkit/FAV.gif"
+            alt="Visualizador de FAV 1, FAV 2 y FAV3"
+            loading="lazy"
+          />
+        </div>
+        <figcaption>Visualizador FAV1, FAV2 y FAV3</figcaption>
+      </figure>
+
+      <!-- GIF 2 -->
+      <figure class="cevkit__item">
+        <div class="cevkit__thumb">
+          <img
+            src="_include/img/cevkit/FAR.gif"
+            alt="Calculadora FAR"
+            loading="lazy"
+          />
+        </div>
+        <figcaption>Calculadora FAR</figcaption>
+      </figure>
+
+      <!-- GIF 3 -->
+      <figure class="cevkit__item">
+        <div class="cevkit__thumb">
+          <img
+            src="_include/img/cevkit/GH.gif"
+            alt="Fácil uso para pegar datos en tabla oficial"
+            loading="lazy"
+          />
+        </div>
+        <figcaption>Fácil uso para pegar datos en tabla oficial</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ===== estilos mínimos (scoped) ===== -->
+<style>
+  /* Reducir espacio debajo de títulos del bloque superior */
+  #cevkit.page .title-page { margin-bottom: .75rem; }
+  #cevkit.page .title-page .title { margin-bottom: .2rem; }
+  #cevkit.page .title-page .title-description { margin-top: .2rem; }
+
+  /* Ajustes principales de la sección */
+  .cevkit {
+    padding: clamp(0rem, 0vw, 0rem) 0;
+    border-top: top;          /* sin línea gris */
+    text-align: center;        /* centra todo */
+  }
+
+  .cevkit .container {
+    max-width: 900px;          /* más estrecho para lectura cómoda */
+    margin: 0 auto;
+    padding: 0 1.25rem;
+  }
+
+  /* Párrafo */
+  #cevkit-section .cevkit__head p {
+    color: #444;
+    max-width: 60ch;           /* acota ancho del texto */
+    margin: .5rem auto 0;      /* poco margen superior y centrado */
+    line-height: 1.6;
+    text-align: justify;       /* texto justificado */
+  }
+
+  /* Botones */
+  .cevkit__actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 3rem 0 0;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: .7rem 1rem;
+    border-radius: 999px;
+    text-decoration: none;
+    border: 1px solid #222;
+    transition: transform .06s ease;
+  }
+  .btn:active { transform: translateY(1px); }
+  .btn--primary { background: #111; color: #fff; border-color: #111; }
+  .btn--ghost { background: #fff; color: #111; }
+
+  /* Grid de GIFs */
+  .cevkit__grid {
+    display: grid;
+    gap: 1rem;
+    margin-top: 3rem;
+    grid-template-columns: repeat(12, 1fr);
+    justify-items: center;
+  }
+
+  .cevkit__item {
+    grid-column: span 12;
+    background: #f7f7f7;
+    border-radius: 14px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 320px;          /* ancho consistente */
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Contenedor de imagen de altura uniforme (letterbox) */
+  .cevkit__thumb {
+    height: clamp(200px, 28vw, 280px); /* AJUSTA este rango a gusto */
+    background: #fff;                  /* “barras blancas” */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .cevkit__thumb img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    display: block;
+  }
+
+  .cevkit__item figcaption {
+    font-size: .9rem;
+    color: #555;
+    padding: .6rem .9rem;
+  }
+
+  @media (min-width: 720px) {
+    .cevkit__item { grid-column: span 4; }
+  }
+</style>
+
+ <!-- NUEVOOOOOOOOOO -->
+  
   <!-- Publications Section -->
   <div id="work2" class="page">
     <div class="container">
