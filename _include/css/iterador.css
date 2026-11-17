@@ -1,36 +1,38 @@
-/* Bloque Iterador CEV en la seccion CEVkit (index.html). Todo con el prefijo .iterador
-   para no tocar el resto de la pagina. */
+/* Bloque Iterador CEV en la seccion CEVkit (index.html). Sin fondos propios: toma el de la
+   seccion. Solo ordena el titulo, el video y los botones (prefijo .iterador). */
 .iterador {
   max-width: 860px;
   margin: 0 auto 4rem;
   text-align: center;
 }
-.iterador__titulo {
+.iterador__titulo,
+.iterador__separador {
   font-weight: 400;
   font-size: 20px;
   letter-spacing: .08em;
   text-transform: uppercase;
   margin: 0 0 1rem;
+  text-align: center;
+}
+.iterador__separador {
+  max-width: 860px;
+  margin: 0 auto 1rem;
 }
 .iterador p {
   max-width: 60ch;
   margin: 0 auto;
-  color: #444;
   line-height: 1.6;
   text-align: justify;
 }
 .iterador__media {
   margin: 2rem auto 0;
-  border-radius: 14px;
-  overflow: hidden;
-  background: #f7f7f7;
-  box-shadow: 0 1px 6px rgba(0, 0, 0, .08);
 }
 .iterador__media video,
 .iterador__media img {
   display: block;
   width: 100%;
   height: auto;
+  border-radius: 14px;
 }
 .iterador__acciones {
   display: flex;
@@ -68,14 +70,4 @@
   background: #111;
   color: #fff;
   text-decoration: none;
-}
-/* separa el Iterador de lo que sigue (CEVkit para Grasshopper) */
-.iterador__separador {
-  max-width: 860px;
-  margin: 0 auto 1rem;
-  font-weight: 400;
-  font-size: 20px;
-  letter-spacing: .08em;
-  text-transform: uppercase;
-  text-align: center;
 }
