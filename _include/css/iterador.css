@@ -75,3 +75,16 @@
   color: #fff;
   text-decoration: none;
 }
+
+/* CEVkit para Grasshopper (#cevkit-section): fondo blanco como el resto de la pagina, en vez
+   del degradado gris. Las tarjetas de los GIF llevan un borde suave para no perderse en el blanco. */
+#cevkit-section,
+#cevkit-section::before,
+#cevkit-section::after {
+  background: #fff !important;
+  background-image: none !important;
+}
+#cevkit-section .cevkit__item {
+  border: 1px solid #e3e3e3;
+  box-shadow: none;
+}
