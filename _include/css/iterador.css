@@ -1,13 +1,15 @@
-/* Bloque Iterador CEV en la seccion CEVkit (index.html). Sin fondos propios: toma el de la
-   seccion. Solo ordena el titulo, el video y los botones (prefijo .iterador). */
+/* Bloque Iterador CEV (index.html), dentro de la seccion blanca del titulo CEVkit (#cevkit,
+   clase .page de la plantilla). Sin fondos propios: solo ordena el titulo, el texto, el video y
+   los botones (prefijo .iterador). */
 .iterador {
   max-width: 860px;
-  margin: 0 auto 4rem;
+  margin: 0 auto 3rem;
   text-align: center;
 }
 .iterador__titulo,
 .iterador__separador {
-  font-weight: 400;
+  color: #000;
+  font-weight: 300;
   font-size: 20px;
   letter-spacing: .08em;
   text-transform: uppercase;
@@ -16,11 +18,13 @@
 }
 .iterador__separador {
   max-width: 860px;
-  margin: 0 auto 1rem;
+  margin: 3rem auto 0;
 }
+/* el body de la plantilla tiene texto blanco: el parrafo necesita su color */
 .iterador p {
   max-width: 60ch;
   margin: 0 auto;
+  color: #444;
   line-height: 1.6;
   text-align: justify;
 }
