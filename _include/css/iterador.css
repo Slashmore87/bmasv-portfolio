@@ -1,0 +1,81 @@
+/* Bloque Iterador CEV en la seccion CEVkit (index.html). Todo con el prefijo .iterador
+   para no tocar el resto de la pagina. */
+.iterador {
+  max-width: 860px;
+  margin: 0 auto 4rem;
+  text-align: center;
+}
+.iterador__titulo {
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  margin: 0 0 1rem;
+}
+.iterador p {
+  max-width: 60ch;
+  margin: 0 auto;
+  color: #444;
+  line-height: 1.6;
+  text-align: justify;
+}
+.iterador__media {
+  margin: 2rem auto 0;
+  border-radius: 14px;
+  overflow: hidden;
+  background: #f7f7f7;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, .08);
+}
+.iterador__media video,
+.iterador__media img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.iterador__acciones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 2rem;
+}
+.iterador__btn {
+  display: inline-block;
+  padding: 10px 16px;
+  border: 1px solid #111;
+  border-radius: 999px;
+  font-size: 14px;
+  line-height: 1.4;
+  text-decoration: none;
+  transition: background .2s, color .2s;
+}
+.iterador__btn--principal,
+.iterador__btn--principal:visited {
+  background: #111;
+  color: #fff;
+}
+.iterador__btn--principal:hover {
+  background: #333;
+  color: #fff;
+  text-decoration: none;
+}
+.iterador__btn--borde,
+.iterador__btn--borde:visited {
+  background: #fff;
+  color: #111;
+}
+.iterador__btn--borde:hover {
+  background: #111;
+  color: #fff;
+  text-decoration: none;
+}
+/* separa el Iterador de lo que sigue (CEVkit para Grasshopper) */
+.iterador__separador {
+  max-width: 860px;
+  margin: 0 auto 1rem;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  text-align: center;
+}
