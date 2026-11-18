@@ -228,7 +228,7 @@ jQuery.easing.jswing=jQuery.easing.swing;jQuery.extend(jQuery.easing,{def:"easeO
 		},
 
 		scrollTo: function(target, callback) {
-			var offset = $(target).offset().top;
+			var offset = $(target).offset().top - (this.config.scrollOffset || 0);
 
 			$('html, body').animate({
 				scrollTop: offset

@@ -1,0 +1,91 @@
+/* Bloque Iterador CEV (index.html), dentro de la seccion blanca del titulo CEVkit (#cevkit,
+   clase .page de la plantilla). Sin fondos propios: solo ordena el titulo, el texto, el video y
+   los botones (prefijo .iterador). */
+.iterador {
+  max-width: 860px;
+  margin: 0 auto 3rem;
+  text-align: center;
+}
+.iterador__titulo,
+.iterador__separador {
+  color: #000;
+  font-weight: 300;
+  font-size: 20px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  margin: 0 0 1rem;
+  text-align: center;
+}
+.iterador__separador {
+  max-width: 860px;
+  margin: 3rem auto 0;
+}
+/* el body de la plantilla tiene texto blanco: el parrafo necesita su color */
+.iterador p {
+  max-width: 60ch;
+  margin: 0 auto;
+  color: #444;
+  line-height: 1.6;
+  text-align: justify;
+}
+.iterador__media {
+  max-width: 520px;   /* ancho maximo del GIF en la pagina */
+  margin: 2rem auto 0;
+}
+.iterador__media video,
+.iterador__media img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 14px;
+}
+.iterador__acciones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 2rem;
+}
+.iterador__btn {
+  display: inline-block;
+  padding: 10px 16px;
+  border: 1px solid #111;
+  border-radius: 999px;
+  font-size: 14px;
+  line-height: 1.4;
+  text-decoration: none;
+  transition: background .2s, color .2s;
+}
+.iterador__btn--principal,
+.iterador__btn--principal:visited {
+  background: #111;
+  color: #fff;
+}
+.iterador__btn--principal:hover {
+  background: #333;
+  color: #fff;
+  text-decoration: none;
+}
+.iterador__btn--borde,
+.iterador__btn--borde:visited {
+  background: #fff;
+  color: #111;
+}
+.iterador__btn--borde:hover {
+  background: #111;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* CEVkit para Grasshopper (#cevkit-section): fondo blanco como el resto de la pagina, en vez
+   del degradado gris. Las tarjetas de los GIF llevan un borde suave para no perderse en el blanco. */
+#cevkit-section,
+#cevkit-section::before,
+#cevkit-section::after {
+  background: #fff !important;
+  background-image: none !important;
+}
+#cevkit-section .cevkit__item {
+  border: 1px solid #e3e3e3;
+  box-shadow: none;
+}

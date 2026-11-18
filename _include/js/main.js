@@ -300,12 +300,14 @@ BRUSHED.tweetFeed = function(){
    Menu Highlight
 ================================================== */
 
+// scrollOffset: alto de la barra fija de arriba (60 px) mas un respiro, para que el titulo de
+// la seccion no quede tapado al hacer clic en el menu
 BRUSHED.menu = function(){
 	$('#menu-nav, #menu-nav-mobile').onePageNav({
 		currentClass: 'current',
     	changeHash: false,
     	scrollSpeed: 750,
-    	scrollOffset: 30,
+    	scrollOffset: 90,
     	scrollThreshold: 0.5,
 		easing: 'easeOutExpo',
 		filter: ':not(.external)'
