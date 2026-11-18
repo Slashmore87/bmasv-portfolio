@@ -29,6 +29,7 @@
   text-align: justify;
 }
 .iterador__media {
+  max-width: 520px;   /* ancho maximo del GIF en la pagina */
   margin: 2rem auto 0;
 }
 .iterador__media video,
